@@ -83,7 +83,7 @@ body {
     position: absolute;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    // display: none;
+    display: none;
     .box_info{
         width: 600px;
         height: 600px;
@@ -94,5 +94,8 @@ body {
         transform: translate(-50% , -50%);
         color: #fff;
     }
+}
+.show{
+    display: block !important;
 }
 

@@ -1,6 +1,8 @@
 const card1 = document.querySelector("#card1");
 const card2 = document.querySelector("#card2");
 const card3 = document.querySelector("#card3");
+const box = document.querySelector(".box");
+const box_info = document.querySelector(".box_info");
 let myBMW = [
   {
     type: "BMW iX1 xDrive 30 xLine",
@@ -28,24 +30,15 @@ let myBMW = [
     good5: "優點五 :高達521公里續航里程",
   },
 ];
-console.log(myBMW);
 
-card1.addEventListener("click", () => {
-    let BMW = document.createElement("div");
-    BMW.classList.add("BMW_Type");
-    let good1 = document.createElement("p");
-    good1.classList.add("good1");
-    let good2 = document.createElement("p");
-    good2.classList.add("good1");
-    let good3 = document.createElement("p");
-    good3.classList.add("good1");
-    let good4 = document.createElement("p");
-    good4.classList.add("good1");
-    let good5 = document.createElement("div");
-    good5.classList.add("good1");
-
-
+card1.addEventListener("click", e => {
+  e.preventDefault();
+  box.classList.toggle('show');
+  let BMW = document.createElement("div");
+  BMW.classList.add("BMW_Type");
+  BMW.innerText=myBMW[0].type;
+  box_info.appendChild(BMW);
+  
 });
 card2.addEventListener("click", () => {});
 card3.addEventListener("click", () => {});
-console.log(myBMW[0].type);
