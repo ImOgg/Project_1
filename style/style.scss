@@ -89,15 +89,28 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
-    padding: 2rem;
-    button{
-     position: absolute;
-     top: 1rem;
-     right: 1.5rem;
-     padding: 4px 8px;
+    padding: 2.4rem;
+    button {
+      position: absolute;
+      bottom: 1rem;
+      right: 1.5rem;
+      padding: 4px 8px;
+      background-color: #000;
+      color: #fff;
+      &:hover {
+        background-color: #fff;
+        color: #000;
+      }
     }
-    h2{
-        font-size: 2rem;
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.3rem;
+    }
+    h2,
+    p {
+      margin-bottom: 1rem;
     }
   }
 }
