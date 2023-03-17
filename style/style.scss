@@ -91,7 +91,10 @@ body {
     background-color: #fff;
     padding: 2rem;
     button{
-        border: 5px solid #000;
+     position: absolute;
+     top: 1rem;
+     right: 1.5rem;
+     padding: 4px 8px;
     }
     h2{
         font-size: 2rem;

@@ -42,12 +42,22 @@ card1.addEventListener("click", (e) => {
     box.classList.toggle("show");
     box_info.removeChild(close);
     box_info.removeChild(BMW);
+    box_info.removeChild(good1);
+    box_info.removeChild(good2);
+    box_info.removeChild(good3);
+    box_info.removeChild(good4);
+    
   });
 
   let BMW = document.createElement("h2");
   BMW.classList.add("BMW_Type");
   BMW.innerText = myBMW[0].type;
   box_info.appendChild(BMW);
+
+  let good1 = document.createElement("p");
+  good1.classList.add("good");
+  good1.innerText = myBMW[0].good1;
+  box_info.appendChild(good1);
 });
 card2.addEventListener("click", () => {});
 card3.addEventListener("click", () => {});
