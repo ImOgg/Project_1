@@ -31,14 +31,23 @@ let myBMW = [
   },
 ];
 
-card1.addEventListener("click", e => {
+card1.addEventListener("click", (e) => {
   e.preventDefault();
-  box.classList.toggle('show');
-  let BMW = document.createElement("div");
+  box.classList.toggle("show");
+  let close = document.createElement("button");
+  close.classList.add("close_button");
+  close.innerText = "關閉";
+  box_info.appendChild(close);
+  close.addEventListener("click", () => {
+    box.classList.toggle("show");
+    box_info.removeChild(close);
+    box_info.removeChild(BMW);
+  });
+
+  let BMW = document.createElement("h2");
   BMW.classList.add("BMW_Type");
-  BMW.innerText=myBMW[0].type;
+  BMW.innerText = myBMW[0].type;
   box_info.appendChild(BMW);
-  
 });
 card2.addEventListener("click", () => {});
 card3.addEventListener("click", () => {});
