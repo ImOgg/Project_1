@@ -79,5 +79,20 @@ body {
         }
     }
 }
-
+.box{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    // display: none;
+    .box_info{
+        width: 600px;
+        height: 600px;
+        border: 1px solid #000;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        color: #fff;
+    }
+}
 

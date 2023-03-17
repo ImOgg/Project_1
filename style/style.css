@@ -65,13 +65,18 @@ body {
     flex: 0 0 100%;
   }
 }
-#box {
-  width: 500px;
-  height: 500px;
-  background-color: pink;
-  display: none;
+.box {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-
-.done {
-  display: block !important;
+.box .box_info {
+  width: 600px;
+  height: 600px;
+  border: 1px solid #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

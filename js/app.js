@@ -30,6 +30,22 @@ let myBMW = [
 ];
 console.log(myBMW);
 
-card1.addEventListener("click", () => {});
+card1.addEventListener("click", () => {
+    let BMW = document.createElement("div");
+    BMW.classList.add("BMW_Type");
+    let good1 = document.createElement("p");
+    good1.classList.add("good1");
+    let good2 = document.createElement("p");
+    good2.classList.add("good1");
+    let good3 = document.createElement("p");
+    good3.classList.add("good1");
+    let good4 = document.createElement("p");
+    good4.classList.add("good1");
+    let good5 = document.createElement("div");
+    good5.classList.add("good1");
+
+
+});
 card2.addEventListener("click", () => {});
 card3.addEventListener("click", () => {});
+console.log(myBMW[0].type);
