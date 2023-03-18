@@ -1,3 +1,19 @@
+setInterval(() => {
+  let topBackground = document.querySelector("section.background-img");
+  if (
+    topBackground.style.backgroundImage == 'url("../images/bmw.jpg")'
+  ) {
+    topBackground.style.backgroundImage = 'url("../images/bmw2.jpg")';
+  } else if (
+    topBackground.style.backgroundImage == 'url("../images/bmw2.jpg")'
+  ) {
+    topBackground.style.backgroundImage = 'url("../images/bmw3.jpg")';
+  } else {
+    topBackground.style.backgroundImage = 'url("../images/bmw.jpg")';
+  }
+}, 3000);
+
+
 const card1 = document.querySelector("#card1");
 const card2 = document.querySelector("#card2");
 const card3 = document.querySelector("#card3");

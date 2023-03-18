@@ -10,68 +10,77 @@
 body {
   font-family: "Roboto", sans-serif;
 }
-
-.navbar {
+body img.fiximg {
+  min-height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -5;
+  bottom: 0;
+  left: 0;
+}
+body .navbar {
   display: flex;
   justify-content: space-between;
   padding: 0 50px;
   background-color: rgb(0, 0, 0);
 }
-.navbar ul {
+body .navbar ul {
   list-style-type: none;
   display: flex;
 }
-.navbar ul li {
+body .navbar ul li {
   padding: 8px 12px;
 }
-.navbar ul li a {
+body .navbar ul li a {
   font-size: 1.5rem;
   text-decoration: none;
   color: #fff;
 }
-
-.card-list {
+body .card-list {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1440px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   margin: auto;
+  min-height: 60vh;
+  background-color: #fff;
+  border: 1px solid pink;
 }
-.card-list .card {
-  flex: 0 0 33.333333%;
+body .card-list .card {
+  flex: 0 1 30%;
   cursor: pointer;
   padding: 8px;
 }
-.card-list .card .imgcontainer {
+body .card-list .card .imgcontainer {
   width: 100%;
   overflow: hidden;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.card-list .card .imgcontainer img {
+body .card-list .card .imgcontainer img {
   width: 100%;
   transition: all 0.5s;
 }
-.card-list .card .imgcontainer img:hover {
+body .card-list .card .imgcontainer img:hover {
   transform: scale(1.2);
 }
-
 @media screen and (max-width: 768px) {
-  .card-list .card {
+  body .card-list .card {
     flex: 0 0 50%;
   }
 }
 @media screen and (max-width: 414px) {
-  .card-list .card {
+  body .card-list .card {
     flex: 0 0 100%;
   }
 }
-.box {
+body .box {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
   display: none;
 }
-.box .box_info {
+body .box .box_info {
   width: 600px;
   height: 600px;
   position: absolute;
@@ -81,7 +90,7 @@ body {
   background-color: #fff;
   padding: 2.4rem;
 }
-.box .box_info button {
+body .box .box_info button {
   position: absolute;
   bottom: 1rem;
   right: 1.5rem;
@@ -89,21 +98,86 @@ body {
   background-color: #000;
   color: #fff;
 }
-.box .box_info button:hover {
+body .box .box_info button:hover {
   background-color: #fff;
   color: #000;
 }
-.box .box_info h2 {
+body .box .box_info h2 {
   font-size: 2rem;
 }
-.box .box_info p {
+body .box .box_info p {
   font-size: 1.3rem;
 }
-.box .box_info h2,
-.box .box_info p {
+body .box .box_info h2,
+body .box .box_info p {
   margin-bottom: 1rem;
 }
-
-.show {
+body .show {
   display: block !important;
+}
+body section.background-img {
+  background-image: url(../images/bmw.jpg);
+  min-height: 70vh;
+  background-size: cover;
+  background-position: center;
+  transition: 0.5s ease;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body section.background-img div.filter {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  min-height: 70vh;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+body section.background-img h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: center;
+}
+body section.StickyContainer {
+  min-height: 70vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body section.StickyContainer h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+body section.googlemap {
+  background-color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+body section.googlemap h2 {
+  font-size: 2rem;
+  margin: 1rem;
+}
+body section.googlemap iframe {
+  width: 100%;
+  min-height: 40vh;
+}
+body footer {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+body footer section.link h3 {
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+  padding: 1rem;
+}
+body footer section.link a img {
+  width: 5vh;
+  margin: 0rem 1rem;
 }/*# sourceMappingURL=style.css.map */
